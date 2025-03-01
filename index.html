@@ -10,83 +10,104 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!-- Container -->
+    <!-- ! Container -->
     <div class="container">
-      <!-- Header ( Первая секция ) -->
+      <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+      <!-- ! Header ( Первая секция ) -->
+
       <header class="header">
-        <!-- Navigation  -->
-        <nav class="header__menu">
-          <ul class="menu__list">
-            <li class="menu__item list-style-type-none">
-              <a href="#0" class="text-decoration-none">главная </a>
-            </li>
-            <li class="menu__item">
-              <a href="#0" class="menu__text">посмотреть лоты</a>
-            </li>
-            <li class="menu__item">
-              <a href="#0" class="menu__text">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Navigation  -->
-
-        <!-- Logo -->
-        <div class="logo">
-          <img src="./images/logo-black.svg" alt="Логотип Оно тебе надо" />
+        <!-- ? 1. Первая колонка  -->
+        <div class="header__column justify-self-flex-start">
+          <!-- ? Навигация -->
+          <nav class="navigation__list">
+            <a href="#0" class="navigation__item text-decoration-none">
+              главная
+            </a>
+            <span class="circle"></span>
+            <a href="#0" class="navigation__item">посмотреть лоты</a>
+            <span class="circle"></span>
+            <a href="#0" class="navigation__item">об аукционе</a>
+          </nav>
+          <!-- ? Навигация -->
         </div>
-        <!-- Logo -->
-
-        <!-- Address -->
-        <address class="address">
-          <a href="#0" class="address__text">+9 999 555 5555</a>
-          <p><a href="#0" class="address__text">info@sobaka.ge</a></p>
-          <p>наб. Принсенграхт 263-</p>
-          265, Амстердам
-        </address>
-        <!-- Address -->
+        <!-- ? 1. Первая колонка  -->
+        <!-- ? 2. Вторая колонка  -->
+        <div class="header__column justify-self-center">
+          <!-- ? Логотип -->
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="./images/logo-black.svg"
+              alt="Логотип Оно тебе надо"
+            />
+          </div>
+          <!-- ? Логотип -->
+        </div>
+        <!-- ? 2. Вторая колонка  -->
+        <!-- ? 3. Третья колонка  -->
+        <div class="header__column justify-self-flex-end">
+          <!-- ? Адрес -->
+          <address class="address__list">
+            <a href="#0" class="address__item">+9 999 555 5555</a>
+            <a href="#0" class="address__item">info@sobaka.ge</a>
+            <span class="address__item text-decoration-none"
+              >наб. Принсенграхт 263-</span
+            >
+            <span class="address__item text-decoration-none"
+              >265, Амстердам</span
+            >
+          </address>
+          <!-- ? Адрес -->
+        </div>
+        <!-- ? 3. Третья колонка  -->
       </header>
-      <!-- Header ( Первая секция ) -->
 
-      <!-- Main ( Основной контент макета ) -->
+      <!-- ! Header ( Первая секция ) -->
+
+      <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+      <!-- ! Основной контент страницы -->
       <main>
-        <!-- Cover ( Вторая секция ) -->
+        <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+        <!-- ! Cover ( Вторая секция ) -->
         <section class="cover">
-          <div class="overlay">
-            <h1 class="title">
-              <span class="text-left">ОНО</span>
-              <span class="text-center">ТЕБЕ</span>
-              <span class="text-right">НАДО</span>
-            </h1>
-            <div class="description">
-              <div class="description-text">
-                <p>АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
-              </div>
-              <a class="button" href="#0" style="text-decoration: none"
-                >СДЕЛАТЬ СТАВКУ</a
-              >
-            </div>
+          <div class="cover__header">
+            <span class="cover__word-one">ОНО</span>
+            <span class="cover__word-two">ТЕБЕ</span>
+            <span class="cover__word-three">НАДО</span>
+          </div>
+          <div class="cover__footer">
+            <span class="cover__text">
+              Аукцион вещей, вкоторые никто не верил
+            </span>
+            <a href="#0" class="cover__button">Сделать ставку</a>
           </div>
         </section>
-        <!-- Cover ( Вторая секция ) -->
+        <!-- ! Cover ( Вторая секция ) -->
 
-        <!-- Lots ( Третья секция ) -->
+        <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+        <!-- ! Lots ( Третья секция ) -->
+
         <section class="lots">
-          <h2 class="main-title">ЛОТЫ</h2>
+          <h2 class="lots__title">Лоты</h2>
           <div class="card__list">
-            <div class="card__item-one">
-              <h2 class="card__title">
+            <div class="card__item card-image-one">
+              <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
-              </h2>
-              <span class="card__text">
+              </h3>
+              <span class="card__description">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </span>
             </div>
-            <div class="card__item-two">
-              <h2 class="card__title">
+            <div class="card__item card-image-two">
+              <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </h2>
-              <span class="card__text">
+              </h3>
+              <span class="card__description">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
@@ -95,11 +116,11 @@
                 Джойса?
               </span>
             </div>
-            <div class="card__item-three">
-              <h2 class="card__title">
+            <div class="card__item card-image-three">
+              <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </h2>
-              <span class="card__text">
+              </h3>
+              <span class="card__description">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -107,29 +128,36 @@
               </span>
             </div>
           </div>
-          <a class="lots__look-more-link" href="#0">посмотреть больше</a>
+          <a href="#0" class="lots__button"> посмотреть больше </a>
         </section>
-        <!-- Lots ( Третья секция ) -->
 
-        <!-- about ( Четвертая секция) -->
+        <!-- ! Lots ( Третья секция ) -->
+
+        <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+        <!-- ! About ( Четвертая секция ) -->
         <section class="about">
-          <!-- logo (логотип в кружочке белый) -->
-          <div class="about__top">
+          <!-- ? 1. Первая строка  -->
+          <div class="about__header">
+            <!-- ? Логотип -->
             <div class="about__logo">
-              <div class="circle">
-                <div class="logo__in__circle">
-                  <img
-                    src="/images/logo-white.svg"
-                    alt="Логотип Оно тебе надо белый в черном круге"
-                  />
-                </div>
+              <div class="logo-circle">
+                <img
+                  class="logo-circle__image"
+                  src="/images/logo-white.svg"
+                  alt="Логотип Оно тебе надо белый в черном круге"
+                />
               </div>
             </div>
-
-            <h2 class="about__title">об аукционе</h2>
+            <!-- ? Логотип -->
+            <!-- ? Заголовок -->
+            <h2 class="about__title">Об аукционе</h2>
+            <!-- ? Заголовок -->
           </div>
-
-          <div class="about__bottom">
+          <!-- ? 1. Первая строка  -->
+          <!-- ? 2. Вторая строка  -->
+          <div class="about__footer">
+            <!-- ? Текст  -->
             <div class="about__content">
               <span class="about__text">
                 Здесь вы не встретите очередное пафосное собрание невероятно
@@ -148,48 +176,73 @@
                 эти лоты стали культовыми.
               </span>
             </div>
+            <!-- ? Текст -->
           </div>
+          <!-- ? 2. Вторая строка  -->
         </section>
-        <!-- about ( Четвертая секция) -->
+        <!-- ! About ( Четвертая секция ) -->
+
+        <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
       </main>
+      <!-- ! Основной контент страницы -->
 
-      <!-- Footer -->
+      <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
+
+      <!-- ! Footer ( Пятая секция ) -->
       <footer class="footer">
-        <!-- Address -->
-        <address class="address">
-          <a href="#0" class="address__text">+9 999 555 5555</a>
-          <p><a href="#0" class="address__text">info@sobaka.ge</a></p>
-          <p>наб. Принсенграхт 263-265, Амстердам</p>
-        </address>
-
-        <!-- Address -->
-        <nav class="menu__footer">
-          <ul class="menu__style">
-            <a href="#0" class="text-decoration-none">главная </a>
-            <a href="#0" class="menu__text">посмотреть лоты</a>
-            <a href="#0" class="menu__text">об аукционе</a>
-          </ul>
-        </nav>
-        <div class="socials">
-          <img
-            class="socials__item"
-            src="/images/yt.svg"
-            alt="Ссылка на Ютуб с логотипом"
-          />
-          <img
-            class="socials__item"
-            src="/images/vk.svg"
-            alt="Ссылка на ВК с логотипом"
-          />
-          <img
-            class="socials__item"
-            src="/images/pinterest.svg"
-            alt="Ссылка на Пинтерест с логотипом"
-          />
+        <!-- ? 1. Первая колонка  -->
+        <div class="footer__column justify-self-flex-start">
+          <!-- ? Адрес -->
+          <address class="address__list">
+            <a href="#0" class="address__item">+9 999 555 5555</a>
+            <a href="#0" class="address__item">info@sobaka.ge</a>
+            <span class="address__item text-decoration-none"
+              >наб. Принсенграхт 263-265,</span
+            >
+            <span class="address__item text-decoration-none">Амстердам</span>
+          </address>
+          <!-- ? Адрес -->
         </div>
+        <!-- ? 1. Первая колонка  -->
+        <!-- ? 2. Вторая колонка  -->
+        <div class="footer__column justify-self-center">
+          <!-- ? Меню -->
+          <nav class="menu__list">
+            <a href="#0" class="menu__item text-decoration-none">главная</a>
+            <a href="#0" class="menu__item">посмотреть лоты</a>
+            <a href="#0" class="menu__item">об аукционе</a>
+          </nav>
+          <!-- ? Меню -->
+        </div>
+        <!-- ? 2. Вторая колонка  -->
+        <!-- ? 3. Третья колонка  -->
+        <div class="footer__column justify-self-flex-end">
+          <!-- ? Социальные сети -->
+          <div class="socials__list">
+            <img
+              class="socials__item"
+              src="/images/yt.svg"
+              alt="Ссылка на Ютуб с логотипом"
+            />
+            <img
+              class="socials__item"
+              src="/images/vk.svg"
+              alt="Ссылка на ВК с логотипом"
+            />
+            <img
+              class="socials__item"
+              src="/images/pinterest.svg"
+              alt="Ссылка на Пинтерест с логотипом"
+            />
+          </div>
+          <!-- ? Социальные сети -->
+        </div>
+        <!-- ? 3. Третья колонка  -->
       </footer>
-      <!-- Footer -->
+      <!-- ! Footer ( Пятая секция ) -->
+
+      <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ -->
     </div>
-    <!-- Container -->
+    <!-- ! Container -->
   </body>
 </html>
