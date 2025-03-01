@@ -59,6 +59,9 @@
 }
 
 .navigation__list {
+  width: 391.4786376953125px;
+  height: 22.00001335144043px;
+
   display: flex;
   align-items: center;
   gap: 13px;
@@ -81,6 +84,11 @@
 
 /* ? <!-- ? Логотип --> */
 
+.logo {
+  width: 148px;
+  height: 105px;
+}
+
 .logo__image {
   width: 148px;
   height: 105px;
@@ -91,6 +99,9 @@
 /* ? <!-- ? Адрес --> */
 
 .address__list {
+  width: 240px;
+  height: 98px;
+
   display: flex;
   flex-direction: column;
   font-style: normal;
